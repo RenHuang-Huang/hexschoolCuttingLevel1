@@ -47,11 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-.wrap{
-	margin: 0 auto;
-	width: 1024px;
-	justify-content: center;
-}
 .header{
 	margin-bottom: 30px;
 }
