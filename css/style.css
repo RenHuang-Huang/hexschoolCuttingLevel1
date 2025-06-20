@@ -73,48 +73,96 @@ table {
 	text-decoration: underline;
 }
 
-
+.main{
+            margin: 0 auto;
+            max-width: 1280px;
+        }
+.content{
+	margin-bottom: 30px;
+}
+.search{
+	position: relative;
+    width: 416px;
+    margin-bottom: 40px;
+}
+.search input{
+	font-size: 16px;
+	padding: 16px 0px 16px 32px;
+	width: 100%;
+    border: 1px solid black;
+    border-radius: 500px;
+    outline: none;
+}
+.search .bi-search {
+	position: absolute;
+    top: 30%;
+    left: 16px;
+    font-size: 16px;
+}
+.container{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            flex-wrap: wrap;
+        }
+.container img{
+            margin-bottom: 16px;
+            width: 416px;
+            height: 200px;
+        }
+		.container h2{
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+		.card{
+            width: 400px;
+            margin-right: 24px;
+            margin-bottom: 40px;
+        }
+        .date{
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .tag{
+            font-size: 22px;
+            padding-bottom: 10px;
+        }
+        .tag .mark{
+            background: blue;
+            color: white;
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 500px;
+            text-decoration: none;
+        }
+.info p {
+            font-size: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-clamp:2;
+            -webkit-line-clamp: 2;
+            margin-bottom: 16px;
+        }
+        .info .button{
+            display: inline-block;
+            border: solid 1px #000000;
+            padding: 8px 16px;
+            border-radius: 500px;
+            text-decoration: none;
+            color:#4B4B4B;
+        }
+        .info .button:hover{
+            color:#000000;
+            border: solid 1px #4B4B4B;
+        }
+		
 .banner{
 	background: url("../images/hero-section2.png");
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
-.news{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	border-bottom: 1px solid black;
-}
-.news img{
-	width: 50%;
-	height: auto;
-}
-
-.news .info{
-	width: 50%;
-}
-.news .tag{
-	margin-left: 24px;
-}
-.news .date{
-	margin-left: 24px;
-}
-.news h2{
-	margin-left: 24px;
-	font-size: 28px;
-	margin-bottom: 8px;
-}
-.news p{
-	margin-left: 24px;
-	width: 66%
-}
-.news .button{
-	margin-left: 24px;
-	margin-bottom: 16px;
-}
-
 .banner .banner-img{
 	width: 50%;
 	height: auto;
@@ -139,46 +187,40 @@ table {
 	margin-left: 80px;
 }
 
-.content{
-	margin-bottom: 30px;
-}
-.search{
-	position: relative;
-    width: 416px;
-    margin-bottom: 40px;
-}
-.search input{
-	font-size: 16px;
-	padding: 16px 0px 16px 32px;
-	width: 100%;
-    border: 1px solid black;
-    border-radius: 500px;
-    outline: none;
-}
-.search .bi-search {
-	position: absolute;
-    top: 30%;
-    left: 16px;
-    font-size: 16px;
-}
-.course{
+.news{
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid black;
 }
-.course .course-item{
-	border: 1px solid black;
-	width: 300px;	
+.news img{
+	width: 50%;
+	height: auto;
 }
-.course-item h2{
-	text-align: center;
-	font-size: 25px;
-	margin-bottom: 5px;
+.news .info{
+	width: 50%;
 }
-.course-item p{
-	font-size: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
+.news .tag{
+	margin-left: 24px;
 }
+.news .date{
+	margin-left: 24px;
+}
+.news h2{
+	margin-left: 24px;
+	font-size: 28px;
+	margin-bottom: 8px;
+}
+.news p{
+	margin-left: 24px;
+	width: 66%
+}
+.news .button{
+	margin-left: 24px;
+	margin-bottom: 16px;
+}
+
 .pages{
 	display: flex;
 	justify-content: center;
@@ -192,10 +234,9 @@ table {
 	display: block;
 	margin-bottom: 40px;
 }
-.footer .copy{
-	padding-top: 12px;
-	padding-bottom: 12px;
-	font-size: 12px;
+
+.footer{
+	border-top: 1px solid black;
 }
 .icons{
     display: flex;
@@ -204,6 +245,9 @@ table {
 .icons img{
 	width: 30px;
 	height: 30px;
+}
+.icons a{
+	text-decoration: none;
 }
 .link{
 	
@@ -219,18 +263,17 @@ table {
 	color: black;
 	font-size: 24px;
 }
-.icons a{
-	text-decoration: none;
-}
 .copyright {
 	margin-top: 24px;
 	margin-bottom: 24px;
 	text-align: center;
 }
-.footer{
-	border-top: 1px solid black;
-}
+
 @media (max-width: 550px) {
+	.wrapper{
+            max-width: 550px
+        }
+
 	.banner .banner-img, .banner .banner-text{
 		width: 100%;
 	}
@@ -274,4 +317,5 @@ table {
 		.card{
             margin-right: 0px;
         }
+		
 }
