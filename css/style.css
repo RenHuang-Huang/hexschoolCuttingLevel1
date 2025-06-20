@@ -180,6 +180,7 @@ table {
 	color: blue;
 	margin-left: 80px;
 	margin-bottom: 12px; 
+	word-wrap: break-word;
 }
 .banner-text p{
 	font-size: 30px;
